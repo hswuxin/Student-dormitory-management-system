@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DormMangementDataSet" targetNamespace="http://tempuri.org/DormMangementDataSet.xsd" xmlns:mstns="http://tempuri.org/DormMangementDataSet.xsd" xmlns="http://tempuri.org/DormMangementDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DormMangementConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DormMangementConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.学生宿舍管理系统.Properties.Settings.GlobalReference.Default.DormMangementConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="numberofbedTableAdapter" GeneratorDataComponentClassName="numberofbedTableAdapter" Name="numberofbed" UserDataComponentName="numberofbedTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DormMangementConnectionString (Settings)" DbObjectName="DormMangement.dbo.numberofbed" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT dormID, numberofbed FROM dbo.numberofbed</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="dormID" DataSetColumn="dormID" />
+              <Mapping SourceColumn="numberofbed" DataSetColumn="numberofbed" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="numberofstudentTableAdapter" GeneratorDataComponentClassName="numberofstudentTableAdapter" Name="numberofstudent" UserDataComponentName="numberofstudentTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DormMangementConnectionString (Settings)" DbObjectName="DormMangement.dbo.numberofstudent" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT dormID, numberofstudent FROM dbo.numberofstudent</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="dormID" DataSetColumn="dormID" />
+              <Mapping SourceColumn="numberofstudent" DataSetColumn="numberofstudent" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DormMangementDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DormMangementDataSet" msprop:Generator_UserDSName="DormMangementDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="numberofbed" msprop:Generator_TableClassName="numberofbedDataTable" msprop:Generator_TableVarName="tablenumberofbed" msprop:Generator_TablePropName="numberofbed" msprop:Generator_RowDeletingName="numberofbedRowDeleting" msprop:Generator_RowChangingName="numberofbedRowChanging" msprop:Generator_RowEvHandlerName="numberofbedRowChangeEventHandler" msprop:Generator_RowDeletedName="numberofbedRowDeleted" msprop:Generator_UserTableName="numberofbed" msprop:Generator_RowChangedName="numberofbedRowChanged" msprop:Generator_RowEvArgName="numberofbedRowChangeEvent" msprop:Generator_RowClassName="numberofbedRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="dormID" msprop:Generator_ColumnVarNameInTable="columndormID" msprop:Generator_ColumnPropNameInRow="dormID" msprop:Generator_ColumnPropNameInTable="dormIDColumn" msprop:Generator_UserColumnName="dormID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="numberofbed" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnnumberofbed" msprop:Generator_ColumnPropNameInRow="numberofbed" msprop:Generator_ColumnPropNameInTable="numberofbedColumn" msprop:Generator_UserColumnName="numberofbed" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="numberofstudent" msprop:Generator_TableClassName="numberofstudentDataTable" msprop:Generator_TableVarName="tablenumberofstudent" msprop:Generator_TablePropName="numberofstudent" msprop:Generator_RowDeletingName="numberofstudentRowDeleting" msprop:Generator_RowChangingName="numberofstudentRowChanging" msprop:Generator_RowEvHandlerName="numberofstudentRowChangeEventHandler" msprop:Generator_RowDeletedName="numberofstudentRowDeleted" msprop:Generator_UserTableName="numberofstudent" msprop:Generator_RowChangedName="numberofstudentRowChanged" msprop:Generator_RowEvArgName="numberofstudentRowChangeEvent" msprop:Generator_RowClassName="numberofstudentRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="dormID" msprop:Generator_ColumnVarNameInTable="columndormID" msprop:Generator_ColumnPropNameInRow="dormID" msprop:Generator_ColumnPropNameInTable="dormIDColumn" msprop:Generator_UserColumnName="dormID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="numberofstudent" msprop:Generator_ColumnVarNameInTable="columnnumberofstudent" msprop:Generator_ColumnPropNameInRow="numberofstudent" msprop:Generator_ColumnPropNameInTable="numberofstudentColumn" msprop:Generator_UserColumnName="numberofstudent" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:numberofbed" />
+      <xs:field xpath="mstns:dormID" />
+    </xs:unique>
+    <xs:unique name="numberofstudent_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:numberofstudent" />
+      <xs:field xpath="mstns:dormID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
